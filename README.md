@@ -22,6 +22,3 @@ Languages: HTML, CSS, JavaScript
 Tools: Git, VS Code
 
 Other: Font Awesome, Boxicons, embedded videos
-
-🔗 Live Preview
-🌍 View Portfolio Live

@@ -891,6 +891,10 @@ footer {
     position: relative;
     left: 0;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .hero-vid-box {
@@ -943,6 +947,20 @@ footer {
     text-align: center;
   }
 
+  .card:nth-child(1)  {
+    padding-top: 12px;
+    
+  }
+
+.card:nth-child(3) {
+    height: auto;
+    
+  }
+
+  .card:nth-child(3) button{
+    display: none;
+  }
+
   .card h1,
   .card p {
     position: relative;
@@ -962,7 +980,7 @@ footer {
 
 @media (max-width: 768px) {
   .my-projects .projects-card .card1,
-  .my-projects .projects-card .card2 {
+  .my-projects .projects-card .card2, .card3 {
     flex-direction: column;
   }
 
@@ -1067,12 +1085,19 @@ footer {
     text-align: center;
     height: auto;
     padding: 20px 10px;
+    overflow: hidden;
   }
 
   .hero-info {
     position: static;
     width: 100%;
     padding: 0 10px;
+    /* margin-left: 100px; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .hero-info h1 {
@@ -1118,6 +1143,10 @@ footer {
     padding-bottom: 20px;
   }
 
+  .card:nth-child(3) {
+    height: auto;
+  }
+
   .card h1,
   .card p {
     position: static;
@@ -1136,9 +1165,17 @@ footer {
   }
 
   /* Projects Section */
-  .my-projects .projects-card .card1,
-  .my-projects .projects-card .card2 {
+
+  .my-projects {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .my-projects .projects-card .card1,
+  .my-projects .projects-card .card2, .card3 {
+    flex-direction: column;
+  
   }
 
   .my-projects .project-info,
@@ -1152,9 +1189,18 @@ footer {
     height: auto;
   }
 
+  .my-projects .project-info h2 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
   .project-info p {
     font-size: 14px;
     line-height: 22px;
+  }
+
+  .my-projects .project-info button {
+    margin-top: -10px;
   }
 
   /* Skills Section */
@@ -1170,7 +1216,7 @@ footer {
 
   .Designer,
   .coder {
-    max-width: 100%;
+    width: 330px;
     padding: 1rem;
   }
 
